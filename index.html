@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ummehani Burhanuddin — Software Engineer & AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Ummehani Burhanuddin, a Software Engineer and AI/ML Engineer building intelligent, scalable systems with modern AI, backend, and full-stack technologies.">
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Ummehani Burhanuddin — Software Engineer & AI/ML Engineer">
+  <meta property="og:description" content="Building scalable software and AI systems—from real-time streaming architectures and multi-agent pipelines to RAG applications and full-stack platforms.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/portrait.jpg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Subtle Reading Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Glow (Desktop Only) -->
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Ummehani Burhanuddin Homepage">
+        UMMEHANI<span class="accent-dot">.</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-socials">
+          <a href="https://linkedin.com/in/ummehani-burhanuddin-954975253" class="social-icon-btn config-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://github.com/ummehani2224" class="social-icon-btn config-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://leetcode.com/u/ummehani0202/" class="social-icon-btn config-leetcode" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3l-4 4-4-4"></path><path d="M12 7v10"></path><path d="M8 21h8"></path><path d="M18 10l3 3-3 3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 5. HERO / LANDING SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-lights" aria-hidden="true">
+        <div class="light-magenta"></div>
+        <div class="light-indigo"></div>
+        <canvas id="hero-network-canvas" class="hero-network-canvas" aria-hidden="true"></canvas>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <!-- LEFT: Typography & Engineering Positioning -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="status-indicator"></span>
+            SOFTWARE ENGINEER · AI/ML ENGINEER
+          </div>
+
+          <h1 class="hero-headline">
+            Building intelligent software systems<span class="accent-dot">.</span>
+          </h1>
+
+          <div class="hero-subtitles-block">
+            <span class="hero-title-badge">Software Engineer</span>
+            <span class="badge-separator">·</span>
+            <span class="hero-title-badge">AI/ML Engineer</span>
+          </div>
+
+          <p class="hero-description">
+            I build scalable software and AI systems—from real-time streaming architectures and multi-agent pipelines to RAG applications and full-stack platforms.
+          </p>
+
+          <div class="hero-status">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <span>B.Tech CSE (AI/ML) · 2027 Graduate · Bhopal, India</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="assets/Ummehani_Burhanuddin_Resume.pdf" download class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="link-subtle">
+              Let's Connect ↗
+            </a>
+          </div>
+
+          <!-- Live Engineering Metrics Stat Strip -->
+          <div class="hero-metrics-strip reveal-up" id="hero-metrics-strip">
+            <div class="hero-metric-item">
+              <div class="metric-number-wrap">
+                <span class="metric-count" data-target="200" data-suffix="+">0</span>
+              </div>
+              <span class="metric-caption">LeetCode Solved</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="hero-metric-item">
+              <div class="metric-number-wrap">
+                <span class="metric-count" data-target="3" data-suffix="">0</span>
+              </div>
+              <span class="metric-caption">AI Systems Shipped</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="hero-metric-item">
+              <div class="metric-number-wrap">
+                <span class="metric-count" data-target="4" data-suffix="-Agent">0</span>
+              </div>
+              <span class="metric-caption">Pipeline Architected</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="hero-metric-item">
+              <div class="metric-number-wrap">
+                <span class="metric-prefix">Top </span><span class="metric-count" data-target="100" data-suffix="">0</span>
+              </div>
+              <span class="metric-caption">Capgemini BuildAThon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Editorial Technology Portrait Visual -->
+        <div class="hero-visual-wrapper">
+          <div class="portrait-card">
+            <!-- Subtle Technical System Markers -->
+            <div class="tech-corner top-left">SYS_NODE_01</div>
+            <div class="tech-corner top-right">ONLINE</div>
+            <div class="tech-corner bottom-left">23.2599° N, 77.4126° E</div>
+            <div class="tech-corner bottom-right">AI/ML ENG</div>
+
+            <div class="portrait-image-container">
+              <img src="assets/portrait.jpg" alt="Ummehani Burhanuddin — Software & AI/ML Engineer" class="portrait-img">
+              <div class="portrait-lighting-overlay" aria-hidden="true"></div>
+            </div>
+
+            <!-- Subtle Floating System Telemetry Tag -->
+            <div class="telemetry-badge">
+              <div class="telemetry-dot"></div>
+              <div class="telemetry-text">
+                <span class="telemetry-label">SYSTEM POSITION</span>
+                <span class="telemetry-val">AI/ML & Distributed Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">01 // IDENTITY</span>
+          <h2 class="section-title">ABOUT ME</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content reveal-up">
+            <h3 class="statement-large">
+              I build systems where software engineering and AI meet.
+            </h3>
+            <div class="about-text-blocks">
+              <p>
+                I am a B.Tech Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning, graduating in 2027. My work spans software engineering, machine learning, distributed systems, real-time applications, and modern AI architectures.
+              </p>
+              <p>
+                I enjoy breaking complex problems into reliable, explainable systems rather than treating AI as a black box. My projects explore multi-agent architectures, RAG systems, real-time streaming, semantic retrieval, and scalable backend services.
+              </p>
+              <p>
+                Alongside AI/ML, I have a strong foundation in Data Structures, Algorithms, and Object-Oriented Programming, with 200+ LeetCode problems solved.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4 Small Information Cards -->
+          <div class="focus-cards-grid">
+            <div class="focus-card reveal">
+              <div class="card-num">01</div>
+              <h4 class="card-title">SOFTWARE</h4>
+              <p class="card-desc">Backend · APIs · Distributed Systems</p>
+            </div>
+            <div class="focus-card reveal">
+              <div class="card-num">02</div>
+              <h4 class="card-title">AI / ML</h4>
+              <p class="card-desc">RAG · LLMs · Multi-Agent AI</p>
+            </div>
+            <div class="focus-card reveal">
+              <div class="card-num">03</div>
+              <h4 class="card-title">FULL STACK</h4>
+              <p class="card-desc">React · FastAPI · REST · WebSockets</p>
+            </div>
+            <div class="focus-card reveal">
+              <div class="card-num">04</div>
+              <h4 class="card-title">ENGINEERING</h4>
+              <p class="card-desc">Docker · AWS · Linux · Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. ENGINEERING PHILOSOPHY -->
+    <section id="philosophy" class="section philosophy-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">02 // PRINCIPLES</span>
+          <h2 class="section-title">HOW I THINK ABOUT ENGINEERING</h2>
+        </div>
+
+        <div class="philosophy-grid">
+          <article class="philosophy-card reveal">
+            <div class="philo-header">
+              <span class="philo-num">01</span>
+              <span class="philo-tag">ARCHITECTURE</span>
+            </div>
+            <h3 class="philo-title">DECOMPOSE</h3>
+            <p class="philo-body">
+              Break complex systems into focused, independently understandable components.
+            </p>
+          </article>
+
+          <article class="philosophy-card reveal">
+            <div class="philo-header">
+              <span class="philo-num">02</span>
+              <span class="philo-tag">REASONING</span>
+            </div>
+            <h3 class="philo-title">DESIGN FOR EXPLAINABILITY</h3>
+            <p class="philo-body">
+              Prefer architectures where decisions, trade-offs, and system behavior can be understood and defended.
+            </p>
+          </article>
+
+          <article class="philosophy-card reveal">
+            <div class="philo-header">
+              <span class="philo-num">03</span>
+              <span class="philo-tag">RELIABILITY</span>
+            </div>
+            <h3 class="philo-title">BUILD FOR REAL USE</h3>
+            <p class="philo-body">
+              Think about latency, fault tolerance, caching, scalability, and operational complexity—not just whether a prototype works.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. TECHNICAL SKILLS (DEVELOPER-GRADE ARCHITECTURAL MATRIX) -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">03 // ARCHITECTURAL TOOLING & STACK</span>
+          <h2 class="section-title">TECHNICAL MATRIX</h2>
+          <p class="section-subtitle">Production frameworks, neural architectures, distributed systems, and infrastructure tools powering my engineering solutions.</p>
+        </div>
+
+        <!-- Domain Category Filter Tabs -->
+        <div class="tech-filter-bar" role="tablist" aria-label="Filter technologies by engineering domain">
+          <button class="tech-filter-pill active" data-filter="all" role="tab" aria-selected="true">All Systems <span class="filter-count">16</span></button>
+          <button class="tech-filter-pill" data-filter="ai" role="tab" aria-selected="false">AI & Deep Learning <span class="filter-count">6</span></button>
+          <button class="tech-filter-pill" data-filter="backend" role="tab" aria-selected="false">Distributed & Backend <span class="filter-count">5</span></button>
+          <button class="tech-filter-pill" data-filter="languages" role="tab" aria-selected="false">Languages & Core <span class="filter-count">5</span></button>
+          <button class="tech-filter-pill" data-filter="cloud" role="tab" aria-selected="false">Cloud & DevOps <span class="filter-count">4</span></button>
+          <button class="tech-filter-pill" data-filter="data" role="tab" aria-selected="false">Databases & Storage <span class="filter-count">3</span></button>
+        </div>
+
+        <!-- Architecture Matrix Grid + Live Terminal Inspector -->
+        <div class="tech-matrix-layout">
+          <!-- Left: Cards Grid -->
+          <div class="tech-cards-grid" id="tech-cards-grid">
+            
+            <!-- Python -->
+            <div class="tech-matrix-card active" data-domain="ai languages backend" data-brand="#38bdf8"
+                 data-tech="Python 3.11+"
+                 data-role="Core AI/ML Pipelines & Async Distributed Services"
+                 data-libs="PyTorch · NumPy · FastAPI · Pydantic v2 · LangChain · asyncio"
+                 data-projects="Quantum AI Stock Research, Real-Time AI Meeting Assistant"
+                 data-rationale="Primary programming language for machine learning models, asynchronous network services, and vector retrieval pipelines. Utilizes static typing, Pydantic v2 validation, and async event loops."
+                 data-code="# Multi-agent async task dispatch&#10;async def orchestrate_agents(ticker: str) -> ConsensusReport:&#10;    tasks = [agent.analyze(ticker) for agent in agents]&#10;    insights = await asyncio.gather(*tasks)&#10;    return await synthesis_engine.synthesize(insights)"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #38bdf8;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.006 2.75h5.81v.825H3.904S0 5.787 0 11.916c0 6.13 3.41 5.922 3.41 5.922h2.04v-2.868s-.11-3.41 3.355-3.41h5.753v-.86H8.804s-3.3 0-3.3-3.245c0-3.245 2.87-3.19 2.87-3.19h8.497s3.05.08 3.05-2.973C19.92 1.34 17.55 0 11.914 0zm-3.32 1.636a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z"/>
+                    <path d="M12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.006-2.75h-5.81v-.825h8.112S24 18.213 24 12.084c0-6.13-3.41-5.922-3.41-5.922h-2.04v2.868s.11 3.41-3.355 3.41H9.442v.86h5.754s3.3 0 3.3 3.245c0 3.245-2.87 3.19-2.87 3.19H4.13s-3.05-.08-3.05 2.973C1.08 22.66 3.45 24 12.086 24zm3.32-1.636a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">CORE / AI</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">Python</h3>
+                <p class="tech-role">Core AI/ML & Distributed Services</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">PRODUCTION CORE</span>
+              </div>
+            </div>
+
+            <!-- PyTorch -->
+            <div class="tech-matrix-card reveal" data-domain="ai" data-brand="#ee4c2c"
+                 data-tech="PyTorch"
+                 data-role="Deep Neural Network Modeling & Tensor Computation"
+                 data-libs="torchvision · torchaudio · torch.nn · CUDA acceleration"
+                 data-projects="Deep Learning Classification & Sequence Models"
+                 data-rationale="Primary framework for deep learning architectures, custom loss functions, automatic differentiation, and GPU-accelerated tensor manipulation."
+                 data-code="# Autograd tensor operations&#10;x = torch.randn(batch_size, seq_len, d_model, device='cuda')&#10;attn_out, _ = self.multihead_attn(x, x, x)&#10;loss = criterion(attn_out, targets)&#10;loss.backward()"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #ee4c2c;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.784 0a11.95 11.95 0 0 0-4.06.708l1.64 1.638a9.69 9.69 0 0 1 2.42-.366c5.38 0 9.74 4.36 9.74 9.74 0 5.38-4.36 9.74-9.74 9.74a9.74 9.74 0 0 1-9.74-9.74c0-2.02.62-3.89 1.67-5.45L3.11 4.56A11.93 11.93 0 0 0 .784 11.72c0 6.63 5.37 12 12 12s12-5.37 12-12-5.37-12-12-12zm-1.89 4.14-3.66 3.66a5.52 5.52 0 0 0 7.8 7.8l2.12-2.12a2.53 2.53 0 0 1-3.58-3.58l-2.68-5.76z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">DEEP LEARNING</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">PyTorch</h3>
+                <p class="tech-role">Deep Learning & Tensor Compute</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">ADVANCED ML</span>
+              </div>
+            </div>
+
+            <!-- LangChain & Agentic AI -->
+            <div class="tech-matrix-card reveal" data-domain="ai backend" data-brand="#10b981"
+                 data-tech="LangChain & Multi-Agent AI"
+                 data-role="Agentic State Machines & RAG Orchestration"
+                 data-libs="LangGraph · PromptTemplate · VectorStoreIndex · Tool Calling"
+                 data-projects="Quantum AI Stock Research, Real-Time Meeting Assistant"
+                 data-rationale="Orchestrates autonomous multi-agent pipelines with specialized roles (Technical, Fundamental, Sentiment, and Master Consensus), memory persistence, and tool dispatching."
+                 data-code="# StateGraph multi-agent flow&#10;workflow = StateGraph(AgentState)&#10;workflow.add_node('technical', run_technical_agent)&#10;workflow.add_node('consensus', run_consensus_engine)&#10;workflow.add_edge('technical', 'consensus')"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #10b981;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <circle cx="4" cy="12" r="2"/>
+                    <circle cx="20" cy="12" r="2"/>
+                    <circle cx="12" cy="4" r="2"/>
+                    <circle cx="12" cy="20" r="2"/>
+                    <path d="M6 12h3M15 12h3M12 6v3M12 15v3"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">AGENTIC AI</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">LangChain</h3>
+                <p class="tech-role">Multi-Agent & RAG Orchestration</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">SPECIALIZED</span>
+              </div>
+            </div>
+
+            <!-- Whisper & Audio AI -->
+            <div class="tech-matrix-card reveal" data-domain="ai" data-brand="#06b6d4"
+                 data-tech="OpenAI Whisper ASR"
+                 data-role="Real-Time Speech-to-Text & Token Streaming"
+                 data-libs="whisper-base · torchaudio · WebSockets · chunked buffers"
+                 data-projects="Real-Time AI Meeting Assistant"
+                 data-rationale="Streams speech audio via WebSockets into chunked inference buffers, performing transcription, speaker timestamping, and rolling context capture."
+                 data-code="# Streaming audio chunk inference&#10;audio_buffer = np.frombuffer(ws_chunk, dtype=np.float32)&#10;result = whisper_model.transcribe(audio_buffer, fp16=False)&#10;await ws.send_json({'text': result['text'], 'timestamp': time.time()})"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #06b6d4;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    <line x1="12" x2="12" y1="19" y2="22"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">SPEECH AI</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">Whisper</h3>
+                <p class="tech-role">Real-Time Speech Transcription</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">PRODUCTION ML</span>
+              </div>
+            </div>
+
+            <!-- FastAPI -->
+            <div class="tech-matrix-card reveal" data-domain="backend languages" data-brand="#14b8a6"
+                 data-tech="FastAPI & Async IO"
+                 data-role="High-Throughput REST APIs & Bidirectional WebSockets"
+                 data-libs="uvicorn · pydantic · starlette · websockets · asyncio"
+                 data-projects="Quantum AI Stock Research, Real-Time Meeting Assistant"
+                 data-rationale="Engineered for high-concurrency microservices with OpenAPI schemas, dependency injection, async coroutines, and streaming WebSocket protocols."
+                 data-code="@app.websocket('/ws/live-stream')&#10;async def websocket_endpoint(ws: WebSocket):&#10;    await ws.accept()&#10;    async for audio_chunk in ws.iter_bytes():&#10;        transcript = await transcribe_stream(audio_chunk)&#10;        await ws.send_text(transcript)"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #14b8a6;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm-.714 17.143v-4.286H7.714L12.714 6.857v4.286h3.572l-5 6z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">ASYNC BACKEND</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">FastAPI</h3>
+                <p class="tech-role">Async REST & WebSocket Pipelines</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">HIGH THROUGHPUT</span>
+              </div>
+            </div>
+
+            <!-- Docker -->
+            <div class="tech-matrix-card reveal" data-domain="cloud backend" data-brand="#38bdf8"
+                 data-tech="Docker"
+                 data-role="Containerization, Multi-Stage Builds & Isolation"
+                 data-libs="Dockerfile · Docker Compose · Container Networking · Volume Mounts"
+                 data-projects="Microservices & Full-Stack Deployment"
+                 data-rationale="Builds lightweight, reproducible production images using multi-stage builds to package Python FastAPI backends and React clients cleanly."
+                 data-code="# Multi-stage production container&#10;FROM python:3.11-slim as builder&#10;WORKDIR /app&#10;COPY requirements.txt .&#10;RUN pip install --no-cache-dir -r requirements.txt&#10;CMD ['uvicorn', 'main:app', '--host', '0.0.0.0', '--port', '8000']"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #38bdf8;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.186.185.186m0 2.715h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.186v1.887c0 .102.082.186.185.186m-2.954 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.186H8.075a.185.185 0 00-.185.186v1.887c0 .102.083.186.185.186m0 2.715h2.119a.186.186 0 00.185-.185V9.006a.185.185 0 00-.185-.186H8.075a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.185-.186H5.12a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m16.516-1.574c-.11-.08-.73-.5-1.78-.5-.4 0-.78.07-1.12.2-.42-1.3-1.63-2.17-3.04-2.17H2.82c-.44 0-.82.35-.82.8v8.66c0 3.86 3.14 7 7 7h5.12c5.05 0 9.17-4.12 9.17-9.17 0-1.87-.58-3.6-1.65-4.82z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">DEVOPS</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">Docker</h3>
+                <p class="tech-role">Containerization & Microservices</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">INFRASTRUCTURE</span>
+              </div>
+            </div>
+
+            <!-- PostgreSQL -->
+            <div class="tech-matrix-card reveal" data-domain="data backend" data-brand="#60a5fa"
+                 data-tech="PostgreSQL"
+                 data-role="Relational Persistence, Indexing & ACID Compliance"
+                 data-libs="psycopg2 · SQLAlchemy · pgvector · complex joins · triggers"
+                 data-projects="Enterprise Data Management & Authentication"
+                 data-rationale="Robust relational engine providing transactional consistency, JSONB semi-structured storage, and extension capability for high-reliability backend stores."
+                 data-code="-- Indexed relational schema with vector support&#10;CREATE TABLE meeting_transcripts (&#10;    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),&#10;    meeting_id UUID NOT NULL,&#10;    embedding vector(1536),&#10;    created_at TIMESTAMPTZ DEFAULT NOW()&#10;);"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #60a5fa;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.97 0C5.36 0 0 5.36 0 11.97c0 4.96 3.03 9.21 7.37 10.97.16.29.35.56.57.81v.01c.71.79 1.76 1.24 2.82 1.24.62 0 1.24-.15 1.79-.47.16-.09.3-.2.43-.32.32.3.73.47 1.17.47.66 0 1.28-.35 1.62-.91.43.59 1.13.91 1.86.91 1.16 0 2.23-.74 2.64-1.84 2.27-1.78 3.73-4.52 3.73-7.86C23.94 5.36 18.58 0 11.97 0z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">RELATIONAL</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">PostgreSQL</h3>
+                <p class="tech-role">ACID Storage & Complex Queries</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">PRODUCTION DB</span>
+              </div>
+            </div>
+
+            <!-- FAISS Vector Database -->
+            <div class="tech-matrix-card reveal" data-domain="ai data" data-brand="#a855f7"
+                 data-tech="FAISS Vector Index"
+                 data-role="Dense Semantic Vector Indexing & L2 Similarity Search"
+                 data-libs="IndexFlatL2 · IndexIVFFlat · cosine similarity · embeddings"
+                 data-projects="Real-Time AI Meeting Assistant"
+                 data-rationale="Accelerates semantic search and memory retrieval across thousands of transcribed sentences with sub-millisecond nearest neighbor queries."
+                 data-code="# Sub-millisecond similarity retrieval&#10;index = faiss.IndexFlatL2(d_dim)&#10;index.add(np.ascontiguousarray(embeddings))&#10;distances, indices = index.search(query_vec, top_k=5)"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #a855f7;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                    <polyline points="2 17 12 22 22 17"/>
+                    <polyline points="2 12 12 17 22 12"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">VECTOR SEARCH</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">FAISS</h3>
+                <p class="tech-role">Vector Similarity & Semantic Index</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">SEMANTIC MEMORY</span>
+              </div>
+            </div>
+
+            <!-- React -->
+            <div class="tech-matrix-card reveal" data-domain="languages backend" data-brand="#38bdf8"
+                 data-tech="React.js"
+                 data-role="Component Architecture, State Orchestration & Reactive UIs"
+                 data-libs="Hooks (useReducer, useEffect) · Context API · Vite · Tailwind"
+                 data-projects="Stock Intelligence Dashboard, Real-Time Meeting UI"
+                 data-rationale="Builds component-driven user interfaces with predictable state lifecycles, real-time WebSocket state streaming, and dynamic data visualization."
+                 data-code="// Real-time streaming hook&#10;const useStreamingAnalysis = (sessionId) => {&#10;  const [feed, dispatch] = useReducer(streamReducer, []);&#10;  useEffect(() => connectWebSocket(sessionId, dispatch), [sessionId]);&#10;  return { feed };&#10;};"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #38bdf8;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-9C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-4.665 0-8.527-3.32-9.428-7.727 1.832.744 4.316 1.207 7.028 1.207 3.32 0 6.29-.693 8.245-1.785-.826 4.71-4.787 8.305-9.845 8.305z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">FRONTEND</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">React</h3>
+                <p class="tech-role">Component Architecture & Real-Time UIs</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">INTERACTION ENGINE</span>
+              </div>
+            </div>
+
+            <!-- C++ -->
+            <div class="tech-matrix-card reveal" data-domain="languages" data-brand="#3b82f6"
+                 data-tech="C++ (Modern C++17/20)"
+                 data-role="Algorithmic Problem Solving & Systems Performance"
+                 data-libs="STL (vector, unordered_map, priority_queue) · pointers · memory"
+                 data-projects="200+ LeetCode DSA Solutions, Algorithm Optimization"
+                 data-rationale="Foundation for low-level memory control, algorithmic time/space optimization, and competitive problem solving on LeetCode."
+                 data-code="// Custom graph Dijkstra with priority queue&#10;priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;&#10;dist[src] = 0;&#10;pq.push({0, src});&#10;while (!pq.empty()) { auto [d, u] = pq.top(); pq.pop(); /* relax edges */ }"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #3b82f6;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22.383 14.195a4.428 4.428 0 00-.776-1.503 4.542 4.542 0 00-1.341-1.127 4.908 4.908 0 00-1.84-.57 5.093 5.093 0 00-1.954.12 5.01 5.01 0 00-1.748.868 4.773 4.773 0 00-1.28 1.488 4.502 4.502 0 00-.51 1.953c0 .708.136 1.378.408 2.012a4.77 4.77 0 001.162 1.636 5.163 5.163 0 001.768 1.077 5.753 5.753 0 002.213.418c.883 0 1.688-.17 2.414-.51a5.04 5.04 0 001.777-1.39l-2.09-1.56a2.766 2.766 0 01-.97.808 2.87 2.87 0 01-1.309.284 3.018 3.018 0 01-1.232-.245 2.682 2.682 0 01-.951-.69 2.775 2.775 0 01-.587-1.055 3.518 3.518 0 01-.197-1.196c0-.42.067-.822.201-1.206.134-.383.333-.72.597-1.01.264-.29.587-.52.97-.69.383-.17.81-.255 1.28-.255.452 0 .867.085 1.246.255.378.17.69.41.936.72.245.31.41.67.494 1.08h2.648a4.912 4.912 0 00-.47-1.815zM24 10.428h-1.543V8.885h-1.028v1.543H19.88v1.03h1.548v1.542h1.03v-1.543H24v-1.03z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">SYSTEMS / DSA</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">C++</h3>
+                <p class="tech-role">High Performance & Algorithmic DSA</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">DSA CORE</span>
+              </div>
+            </div>
+
+            <!-- Java -->
+            <div class="tech-matrix-card reveal" data-domain="languages" data-brand="#f97316"
+                 data-tech="Java (JDK 17+)"
+                 data-role="Object-Oriented Design, Concurrency & Type Systems"
+                 data-libs="Collections Framework · Generics · Streams API · Multithreading"
+                 data-projects="Enterprise Application Fundamentals & Academic Systems"
+                 data-rationale="Engineered with strong OOP principles, robust static typing, memory management, and concurrent threads. Certified by NPTEL (IIT Kharagpur)."
+                 data-code="// Thread-safe concurrent cache&#10;public class ConcurrentModelCache<K, V> {&#10;    private final ConcurrentHashMap<K, V> map = new ConcurrentHashMap<>();&#10;    public V computeIfAbsent(K key, Function<K, V> mappingFunction) {&#10;        return map.computeIfAbsent(key, mappingFunction);&#10;    }&#10;}"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #f97316;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.799 2.072-10.433-.42-6.943-1.149M8.38 15.545s-1.028.711.542.915c2.372.308 3.906.318 6.645-.245 0 0 .399.309 1.01.536-5.59 2.115-11.758-.415-8.197-1.206M13.847 11.233c.772.845-.205 1.58-.205 1.58s2.433-1.258 1.309-2.587c-1.115-1.318-2.617-1.956-4.992-3.327 0 0 2.227.608 3.888 4.334M16.947 18.257c.381.332.89.544.89.544s-.696.402-1.942.721c-2.434.622-5.74.654-8.736.033 0 0-.414.471-.856.732 5.08 1.157 11.428.522 11.979-1.246.529-1.698-1.335-.784-1.335-.784"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">ENTERPRISE OOP</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">Java</h3>
+                <p class="tech-role">OOP, Concurrency & Enterprise Systems</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">NPTEL CERTIFIED</span>
+              </div>
+            </div>
+
+            <!-- Redis -->
+            <div class="tech-matrix-card reveal" data-domain="data backend" data-brand="#ef4444"
+                 data-tech="Redis"
+                 data-role="In-Memory Caching, TTL Expiration & Pub/Sub"
+                 data-libs="redis-py · Cache Invalidation · Key-Value Store · Rate Limiting"
+                 data-projects="Quantum AI Stock Research (Response Cache)"
+                 data-rationale="Mitigates upstream external API quotas and accelerates recurring stock queries by caching serialized model outputs with atomic expiration."
+                 data-code="# In-memory TTL caching layer&#10;cached_report = await redis_client.get(f'ticker:{symbol}')&#10;if cached_report:&#10;    return json.loads(cached_report)&#10;report = await run_pipeline(symbol)&#10;await redis_client.setex(f'ticker:{symbol}', 300, json.dumps(report))"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #ef4444;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0L1.608 6v12L12 24l10.392-6V6L12 0zm7.794 16.5L12 20.999 4.206 16.5V7.5L12 3.001 19.794 7.5v9z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">CACHE & PUBSUB</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">Redis</h3>
+                <p class="tech-role">In-Memory Caching & Rate Limiting</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">LOW LATENCY</span>
+              </div>
+            </div>
+
+            <!-- AWS Cloud -->
+            <div class="tech-matrix-card reveal" data-domain="cloud" data-brand="#f59e0b"
+                 data-tech="AWS Cloud (EC2 & S3)"
+                 data-role="Cloud Compute, Artifact Persistence & IAM"
+                 data-libs="AWS EC2 · S3 Buckets · Security Groups · IAM Policies"
+                 data-projects="Production Hosting & Large Asset Persistence"
+                 data-rationale="Hosts containerized inference servers on compute instances with dedicated block storage and persistent S3 object storage for audio files."
+                 data-code="# AWS S3 Boto3 asset persistence&#10;s3 = boto3.client('s3', region_name='ap-south-1')&#10;s3.upload_file(&#10;    Filename=audio_path,&#10;    Bucket='ummehani-meeting-recordings',&#10;    Key=f'sessions/{session_id}.wav'&#10;)"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #f59e0b;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.8 17.5a14.7 14.7 0 0 1-13.6 0 .5.5 0 0 1 .3-.9 13.7 13.7 0 0 0 13 0 .5.5 0 0 1 .3.9zm3-3.8c-.2 0-.4-.1-.5-.3a18.2 18.2 0 0 0-18.6 0 .5.5 0 0 1-.5-.8 19.2 19.2 0 0 1 19.6 0c.2.2.2.5 0 .7a.6.6 0 0 1-.5.4zM20 7.7a4.6 4.6 0 0 0-4.4-3.2 5 5 0 0 0-4.8 3.5 3.7 3.7 0 0 0-3.6 3.6 3.6 3.6 0 0 0 .5 1.8h13a3.5 3.5 0 0 0-.7-5.7z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">CLOUD INFRA</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">AWS EC2 / S3</h3>
+                <p class="tech-role">Cloud Compute & Object Storage</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">INFRASTRUCTURE</span>
+              </div>
+            </div>
+
+            <!-- Git & GitHub -->
+            <div class="tech-matrix-card reveal" data-domain="cloud languages" data-brand="#f43f5e"
+                 data-tech="Git & GitHub CI/CD"
+                 data-role="Version Control, Branching Models & Automation"
+                 data-libs="Git Flow · GitHub Actions · Semantic Releases · Hook Automation"
+                 data-projects="Open Source Repositories & Automated Testing"
+                 data-rationale="Implements disciplined commit hygiene, feature branching, pull request reviews, and GitHub Actions workflows for continuous integration."
+                 data-code="# GitHub Actions CI workflow&#10;name: Test & Lint&#10;on: [push, pull_request]&#10;jobs:&#10;  build:&#10;    runs-on: ubuntu-latest&#10;    steps:&#10;      - uses: actions/checkout@v4&#10;      - run: pytest --cov=src tests/"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #f43f5e;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.546 10.93L13.067.452a1.5 1.5 0 0 0-2.126 0L8.808 2.585l3.242 3.242a2.001 2.001 0 0 1 2.535 2.535l3.12 3.12a2.002 2.002 0 1 1-1.42 1.42l-2.9-2.9v6.643a2 2 0 1 1-2.001 0V9.878a2.001 2.001 0 0 1-1.07-2.617L7.098 4.045 1.455 9.688a1.5 1.5 0 0 0 0 2.126l10.48 10.48a1.5 1.5 0 0 0 2.126 0l9.485-9.485a1.502 1.502 0 0 0 0-2.879z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">VERSION CONTROL</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">Git & CI/CD</h3>
+                <p class="tech-role">VCS & Continuous Integration</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">WORKFLOW CORE</span>
+              </div>
+            </div>
+
+            <!-- Linux & Shell Scripting -->
+            <div class="tech-matrix-card reveal" data-domain="cloud languages" data-brand="#eab308"
+                 data-tech="Linux & Bash Scripting"
+                 data-role="Unix Kernel, Process Management & Automation"
+                 data-libs="Bash · systemd · grep / awk / sed · cron · SSH keys"
+                 data-projects="Server Administration & Task Scheduling"
+                 data-rationale="Primary OS environment for container execution, automated provisioning scripts, daemon process monitoring, and networking diagnosis."
+                 data-code="#!/bin/bash&#10;# Healthcheck and automatic service restarter&#10;if ! curl -sf http://localhost:8000/health > /dev/null; then&#10;    echo '[ALERT] FastAPI down at $(date). Restarting...'&#10;    systemctl restart ai-api.service&#10;fi"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #eab308;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0a6 6 0 0 0-6 6c0 1.95.78 3.5 2.1 4.67-.14.7-.3 1.45-.48 2.23C6.73 16.48 5 18.06 5 21a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3c0-2.94-1.73-4.52-2.62-8.1-.18-.78-.34-1.53-.48-2.23A5.96 5.96 0 0 0 18 6a6 6 0 0 0-6-6zm-1.5 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">SYSTEMS / OS</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">Linux / Bash</h3>
+                <p class="tech-role">Unix Kernel & Automation</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">DAILY DRIVER</span>
+              </div>
+            </div>
+
+            <!-- TensorFlow & Keras -->
+            <div class="tech-matrix-card reveal" data-domain="ai" data-brand="#ea580c"
+                 data-tech="TensorFlow & Keras"
+                 data-role="Neural Networks, CNNs & Machine Learning"
+                 data-libs="tf.keras · Sequential API · EarlyStopping · TensorBoard"
+                 data-projects="Supervised Machine Learning & Deep Classifiers"
+                 data-rationale="Applied for predictive models, convolutional architectures, hyperparameter experimentation, and academic research benchmarks."
+                 data-code="# Keras deep sequential classifier&#10;model = keras.Sequential([&#10;    layers.Dense(128, activation='relu', input_shape=(feature_dim,)),&#10;    layers.Dropout(0.3),&#10;    layers.Dense(num_classes, activation='softmax')&#10;])&#10;model.compile(optimizer='adam', loss='categorical_crossentropy')"
+                 tabindex="0" role="button">
+              <div class="tech-card-header">
+                <div class="tech-icon-box" style="--brand-color: #ea580c;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.001 0l9.526 5.5v11l-9.526 5.5-9.528-5.5V5.5L12.001 0zm0 2.31L4.474 6.657v8.686L12 19.689l7.525-4.346V6.657L12.001 2.31z"/>
+                  </svg>
+                </div>
+                <span class="tech-domain-badge">ML FRAMEWORK</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-name">TensorFlow</h3>
+                <p class="tech-role">Deep Learning & CNN Pipelines</p>
+              </div>
+              <div class="tech-card-footer">
+                <span class="tech-status-dot"></span>
+                <span class="tech-status-label">DEEP LEARNING</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Live Architecture Terminal HUD -->
+          <div class="tech-inspector-dock reveal-up">
+            <div class="tech-terminal-window">
+              <div class="terminal-titlebar">
+                <div class="terminal-controls">
+                  <span class="control-dot close"></span>
+                  <span class="control-dot min"></span>
+                  <span class="control-dot max"></span>
+                </div>
+                <div class="terminal-title">sys-inspect@ummehani:~/stack</div>
+                <div class="terminal-status-pill">
+                  <span class="status-live-dot"></span>
+                  <span>LIVE INTROSPECTOR</span>
+                </div>
+              </div>
+
+              <div class="terminal-screen">
+                <div class="terminal-command-line">
+                  <span class="t-prompt">ummehani@portfolio:~$</span>
+                  <span class="t-cmd" id="terminal-cmd">inspect-tech --target "Python 3.11+"</span>
+                </div>
+
+                <div class="terminal-output-container">
+                  <div class="t-header-block">
+                    <div class="t-target-title" id="terminal-target">Python 3.11+</div>
+                    <span class="t-status-tag" id="terminal-status-tag">PRODUCTION READY</span>
+                  </div>
+
+                  <div class="t-info-row">
+                    <span class="t-label">PRIMARY ROLE:</span>
+                    <span class="t-val" id="terminal-role">Core AI/ML Pipelines & Async Distributed Services</span>
+                  </div>
+
+                  <div class="t-info-row">
+                    <span class="t-label">KEY ECOSYSTEM:</span>
+                    <span class="t-val" id="terminal-libs">PyTorch · NumPy · FastAPI · Pydantic v2 · LangChain · asyncio</span>
+                  </div>
+
+                  <div class="t-info-row">
+                    <span class="t-label">USED IN SYSTEMS:</span>
+                    <span class="t-val highlight-green" id="terminal-projects">Quantum AI Stock Research, Real-Time AI Meeting Assistant</span>
+                  </div>
+
+                  <div class="t-rationale-block">
+                    <span class="t-label">ENGINEERING RATIONALE:</span>
+                    <p class="t-rationale-text" id="terminal-rationale">Primary programming language for machine learning models, asynchronous network services, and vector retrieval pipelines. Utilizes static typing, Pydantic v2 validation, and async event loops.</p>
+                  </div>
+
+                  <div class="t-code-block">
+                    <div class="t-code-header">
+                      <span>ARCHITECTURE EXECUTION SAMPLE</span>
+                      <span class="t-copy-hint">READ-ONLY STREAM</span>
+                    </div>
+                    <pre class="t-code-pre"><code id="terminal-code"># Multi-agent async task dispatch
+async def orchestrate_agents(ticker: str) -> ConsensusReport:
+    tasks = [agent.analyze(ticker) for agent in agents]
+    insights = await asyncio.gather(*tasks)
+    return await synthesis_engine.synthesize(insights)</code></pre>
+                  </div>
+                </div>
+
+                <div class="terminal-bottom-hint">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                  <span>Interactive HUD: Hover or click any technology card to inspect architecture specifications.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. EDUCATION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">04 // FOUNDATION</span>
+          <h2 class="section-title">EDUCATION</h2>
+        </div>
+
+        <div class="education-timeline">
+          <!-- 01. UNDERGRADUATE (B.TECH) -->
+          <div class="timeline-node reveal">
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <div class="node-meta">
+                <span class="node-badge">2023 — 2027 (Expected)</span>
+                <span class="node-location">Bhopal, Madhya Pradesh, India</span>
+              </div>
+              <h3 class="degree-title">B.Tech — Computer Science Engineering (AI & ML)</h3>
+              <p class="institution-name">Lakshmi Narain College of Technology, Bhopal</p>
+              
+              <div class="coursework-block">
+                <span class="coursework-label">RELEVANT COURSEWORK:</span>
+                <div class="coursework-tags">
+                  <span>Data Structures & Algorithms</span>
+                  <span>Object-Oriented Programming</span>
+                  <span>Machine Learning</span>
+                  <span>Deep Learning</span>
+                  <span>NLP</span>
+                  <span>DBMS</span>
+                  <span>Operating Systems</span>
+                  <span>Computer Networks</span>
+                  <span>Computer Vision</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02. SENIOR SECONDARY (12TH HSC) -->
+          <div class="timeline-node reveal">
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <div class="node-meta">
+                <span class="node-badge">2021 · Completed</span>
+                <span class="node-location">Bhopal, Madhya Pradesh, India</span>
+              </div>
+              <h3 class="degree-title">Higher Secondary Certificate (HSC) — Class XII</h3>
+              <p class="institution-name">Bal Bhawan School, Bhopal</p>
+              
+              <div class="coursework-block">
+                <span class="coursework-label">CORE DISCIPLINES & FOCUS:</span>
+                <div class="coursework-tags">
+                  <span>Physics</span>
+                  <span>Chemistry</span>
+                  <span>Mathematics</span>
+                  <span>Computer Science</span>
+                  <span>English</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03. SECONDARY SCHOOL (10TH SSC) -->
+          <div class="timeline-node reveal">
+            <div class="node-marker"></div>
+            <div class="node-content">
+              <div class="node-meta">
+                <span class="node-badge">2020 · Completed</span>
+                <span class="node-location">Bhopal, Madhya Pradesh, India</span>
+              </div>
+              <h3 class="degree-title">Secondary School Certificate (SSC) — Class X</h3>
+              <p class="institution-name">Carmel Convent School, Bhopal</p>
+              
+              <div class="coursework-block">
+                <span class="coursework-label">FOUNDATIONAL ACADEMICS:</span>
+                <div class="coursework-tags">
+                  <span>Science</span>
+                  <span>Mathematics</span>
+                  <span>Social Sciences</span>
+                  <span>English</span>
+                  <span>Information Technology</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. PROJECTS (SELECTED WORK - Centerpiece) -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">05 // ENGINEERING PROJECTS</span>
+          <h2 class="section-title">SELECTED WORK</h2>
+          <p class="section-subtitle">Systems built around real engineering problems.</p>
+        </div>
+
+        <div class="projects-stack">
+          <!-- PROJECT 01 -->
+          <article class="project-editorial-card reveal">
+            <div class="project-card-header">
+              <div class="project-id-block">
+                <span class="project-num">PROJECT 01</span>
+                <span class="project-cat">MULTI-AGENT AI · FINANCIAL SYSTEMS</span>
+              </div>
+              <div class="project-action-links">
+                <a href="https://github.com/ummehani2224/Quantum-AI-stock-research" class="btn-icon-link config-project1-github" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                  <span>Code</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-main-info">
+                <h3 class="project-title">QUANTUM AI RESEARCH AGENT</h3>
+                
+                <div class="project-stack-pills">
+                  <span>FastAPI</span>
+                  <span>React</span>
+                  <span>Python</span>
+                  <span>Pandas</span>
+                  <span>yFinance</span>
+                  <span>Multi-Agent AI</span>
+                </div>
+
+                <p class="project-desc">
+                  A service-oriented financial research system that decomposes investment analysis into specialized AI agents and combines their independent analysis into a final recommendation.
+                </p>
+
+                <div class="engineering-story-box">
+                  <span class="story-badge">ENGINEERING CHALLENGE & SOLUTION</span>
+                  <p>
+                    An initial single-LLM-prompt approach produced inconsistent and difficult-to-interpret results. The system was redesigned around four specialized agents: Technical, Fundamental, Sentiment, and Master Synthesis.
+                  </p>
+                </div>
+
+                <!-- Initial Highlights + Expandable decisions -->
+                <div class="technical-highlights">
+                  <span class="highlights-label">CORE ARCHITECTURE HIGHLIGHTS:</span>
+                  <ul class="highlights-list">
+                    <li>4-agent service-oriented architecture (Technical, Fundamental, Sentiment, Master Synthesis)</li>
+                    <li>Confidence-scored independent analysis with consensus-based synthesis</li>
+                    <li>Deterministic Buy / Hold / Sell investment recommendation output</li>
+                  </ul>
+
+                  <!-- Expandable technical decision details -->
+                  <div class="project-expand-content" id="proj-01-expand">
+                    <ul class="highlights-list expanded">
+                      <li>Integrates 3 live external financial data sources</li>
+                      <li>Evaluates 5 financial timeframes from 15m to 1W</li>
+                      <li>In-memory API response caching to eliminate redundant data fetches</li>
+                      <li>Decoupled React + FastAPI full-stack platform</li>
+                      <li>Real-time structured investment insights generation</li>
+                    </ul>
+                  </div>
+
+                  <button class="btn-expand-toggle" data-target="proj-01-expand" aria-expanded="false">
+                    <span class="toggle-text">View Technical Decisions</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Technical Visual: Multi-Agent Network -->
+              <div class="project-tech-visual">
+                <div class="visual-container">
+                  <svg class="agent-network-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Grid background -->
+                    <defs>
+                      <pattern id="grid1" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                      </pattern>
+                      <linearGradient id="violetGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ff2d87" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+                      </linearGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid1)" />
+
+                    <!-- Connection Lines to Master Synthesis -->
+                    <line x1="80" y1="60" x2="280" y2="150" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1.5" stroke-dasharray="4 4" class="stream-line"/>
+                    <line x1="80" y1="150" x2="280" y2="150" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1.5" stroke-dasharray="4 4" class="stream-line"/>
+                    <line x1="80" y1="240" x2="280" y2="150" stroke="rgba(139, 92, 246, 0.4)" stroke-width="1.5" stroke-dasharray="4 4" class="stream-line"/>
+
+                    <!-- Agent 1: Technical -->
+                    <circle cx="80" cy="60" r="28" fill="#18181B" stroke="#27272A" stroke-width="1.5"/>
+                    <text x="80" y="58" fill="#F4F4F5" font-family="JetBrains Mono" font-size="9" text-anchor="middle" font-weight="600">AGENT 1</text>
+                    <text x="80" y="70" fill="#A1A1AA" font-family="Inter" font-size="8" text-anchor="middle">Technical</text>
+
+                    <!-- Agent 2: Fundamental -->
+                    <circle cx="80" cy="150" r="28" fill="#18181B" stroke="#27272A" stroke-width="1.5"/>
+                    <text x="80" y="148" fill="#F4F4F5" font-family="JetBrains Mono" font-size="9" text-anchor="middle" font-weight="600">AGENT 2</text>
+                    <text x="80" y="160" fill="#A1A1AA" font-family="Inter" font-size="8" text-anchor="middle">Fundamental</text>
+
+                    <!-- Agent 3: Sentiment -->
+                    <circle cx="80" cy="240" r="28" fill="#18181B" stroke="#27272A" stroke-width="1.5"/>
+                    <text x="80" y="238" fill="#F4F4F5" font-family="JetBrains Mono" font-size="9" text-anchor="middle" font-weight="600">AGENT 3</text>
+                    <text x="80" y="250" fill="#A1A1AA" font-family="Inter" font-size="8" text-anchor="middle">Sentiment</text>
+
+                    <!-- Central Synthesis Node -->
+                    <circle cx="280" cy="150" r="38" fill="#18181B" stroke="url(#violetGlow)" stroke-width="2"/>
+                    <circle cx="280" cy="150" r="46" stroke="rgba(139, 92, 246, 0.2)" stroke-width="1" stroke-dasharray="3 3"/>
+                    <text x="280" y="146" fill="#F4F4F5" font-family="JetBrains Mono" font-size="9" text-anchor="middle" font-weight="600">SYNTHESIS</text>
+                    <text x="280" y="158" fill="#8b5cf6" font-family="Inter" font-size="8" text-anchor="middle">Consensus Engine</text>
+                    <text x="280" y="170" fill="#A1A1AA" font-family="JetBrains Mono" font-size="7" text-anchor="middle">Confidence &gt; 92%</text>
+
+                    <!-- Output Recommendation Badge -->
+                    <rect x="230" y="215" width="100" height="24" rx="4" fill="rgba(24, 24, 27, 0.9)" stroke="#27272A"/>
+                    <text x="280" y="230" fill="#10b981" font-family="JetBrains Mono" font-size="9" text-anchor="middle" font-weight="600">RECOM: BUY (0.84)</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article class="project-editorial-card reveal">
+            <div class="project-card-header">
+              <div class="project-id-block">
+                <span class="project-num">PROJECT 02</span>
+                <span class="project-cat">REAL-TIME AI · RAG · STREAMING</span>
+              </div>
+              <div class="project-action-links">
+                <a href="https://github.com/ummehani2224/Real-time-AI-meeting-asistant" class="btn-icon-link config-project2-github" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                  <span>Code</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-main-info">
+                <h3 class="project-title">REAL-TIME AI MEETING ASSISTANT</h3>
+                
+                <div class="project-stack-pills">
+                  <span>Whisper</span>
+                  <span>FAISS</span>
+                  <span>LangChain</span>
+                  <span>WebSockets</span>
+                  <span>FastAPI</span>
+                  <span>React</span>
+                </div>
+
+                <p class="project-desc">
+                  A real-time meeting intelligence system that streams transcription updates, creates summaries, extracts action items, and provides semantic retrieval across meeting sessions.
+                </p>
+
+                <!-- Technical Highlights -->
+                <div class="technical-highlights">
+                  <span class="highlights-label">PIPELINE & ARCHITECTURE:</span>
+                  <ul class="highlights-list">
+                    <li>WebSocket-based bidirectional streaming architecture for ultra-low latency</li>
+                    <li>Live speech transcription powered by Whisper Base model</li>
+                    <li>Automated speaker segmentation & timestamp alignment</li>
+                  </ul>
+
+                  <!-- Expandable technical decision details -->
+                  <div class="project-expand-content" id="proj-02-expand">
+                    <ul class="highlights-list expanded">
+                      <li>LLM-based summarization with structured action-item extraction</li>
+                      <li>FAISS vector database for semantic memory retrieval</li>
+                      <li>Cross-session meeting context retrieval</li>
+                      <li>LangChain orchestration for multi-stage processing</li>
+                      <li>Fault-tolerant end-to-end processing pipeline</li>
+                    </ul>
+                  </div>
+
+                  <button class="btn-expand-toggle" data-target="proj-02-expand" aria-expanded="false">
+                    <span class="toggle-text">View System Specs</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Technical Visual: End-to-End Pipeline Diagram -->
+              <div class="project-tech-visual">
+                <div class="pipeline-diagram-box">
+                  <div class="pipeline-header">STREAMING DATAFLOW ARCHITECTURE</div>
+                  <div class="pipeline-nodes-flow">
+                    <div class="pipe-node">
+                      <span class="p-step">01</span>
+                      <span class="p-title">Audio Input</span>
+                      <span class="p-sub">Live Microphone</span>
+                    </div>
+                    <div class="pipe-arrow">↓</div>
+                    <div class="pipe-node">
+                      <span class="p-step">02</span>
+                      <span class="p-title">WebSocket Stream</span>
+                      <span class="p-sub">Bidirectional Async</span>
+                    </div>
+                    <div class="pipe-arrow">↓</div>
+                    <div class="pipe-node active-pipe">
+                      <span class="p-step">03</span>
+                      <span class="p-title">Whisper Base</span>
+                      <span class="p-sub">Speech-to-Text</span>
+                    </div>
+                    <div class="pipe-arrow">↓</div>
+                    <div class="pipe-node">
+                      <span class="p-step">04</span>
+                      <span class="p-title">Speaker Segmentation</span>
+                      <span class="p-sub">Diarization</span>
+                    </div>
+                    <div class="pipe-arrow">↓</div>
+                    <div class="pipe-node">
+                      <span class="p-step">05</span>
+                      <span class="p-title">LLM Processing</span>
+                      <span class="p-sub">Summary & Actions</span>
+                    </div>
+                    <div class="pipe-arrow">↓</div>
+                    <div class="pipe-node">
+                      <span class="p-step">06</span>
+                      <span class="p-title">FAISS Semantic Memory</span>
+                      <span class="p-sub">Vector Embeddings</span>
+                    </div>
+                    <div class="pipe-arrow">↓</div>
+                    <div class="pipe-node terminal-node">
+                      <span class="p-step">07</span>
+                      <span class="p-title">Session Retrieval</span>
+                      <span class="p-sub">RAG Query Interface</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 -->
+          <article class="project-editorial-card reveal">
+            <div class="project-card-header">
+              <div class="project-id-block">
+                <span class="project-num">PROJECT 03</span>
+                <span class="project-cat">AI/ML · RECOMMENDER SYSTEM · FULL STACK</span>
+              </div>
+              <div class="project-action-links">
+                <span class="hackathon-badge">HCL Tech Hackathon</span>
+                <a href="https://github.com/ummehani2224/AI-course-recommendation-system" class="btn-icon-link config-project3-github" target="_blank" rel="noopener noreferrer" title="View GitHub Repository">
+                  <span>Code</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body-grid">
+              <div class="project-main-info">
+                <h3 class="project-title">KAKSHA — AI-POWERED PERSONALIZED LEARNING PATH RECOMMENDER</h3>
+                
+                <div class="project-stack-pills">
+                  <span>FastAPI</span>
+                  <span>Next.js 16</span>
+                  <span>React 19</span>
+                  <span>TypeScript</span>
+                  <span>Groq</span>
+                  <span>Sentence-Transformers</span>
+                  <span>PyTorch</span>
+                  <span>Supabase</span>
+                  <span>pgvector</span>
+                </div>
+
+                <p class="project-desc">
+                  An AI-powered learning platform that identifies individual skill gaps from free-text learner backgrounds and generates personalized, week-by-week learning roadmaps. Built for the HCL Tech Hackathon.
+                </p>
+
+                <!-- Technical Highlights -->
+                <div class="technical-highlights">
+                  <span class="highlights-label">KEY TECHNICAL DECISIONS:</span>
+                  <ul class="highlights-list">
+                    <li>Free-text learner profile analysis with automated skill-gap identification</li>
+                    <li>Groq-powered high-throughput LLM reasoning pipeline</li>
+                    <li>Local embedding generation with PyTorch & Sentence-Transformers</li>
+                  </ul>
+
+                  <!-- Expandable technical decision details -->
+                  <div class="project-expand-content" id="proj-03-expand">
+                    <ul class="highlights-list expanded">
+                      <li>Supabase PostgreSQL vector store with pgvector extension</li>
+                      <li>Cosine similarity metric for high-precision resource matching</li>
+                      <li>Dynamic week-by-week automated curriculum generation</li>
+                      <li>Full-stack architecture: FastAPI backend + Next.js 16 with React 19 & Tailwind CSS</li>
+                    </ul>
+                  </div>
+
+                  <button class="btn-expand-toggle" data-target="proj-03-expand" aria-expanded="false">
+                    <span class="toggle-text">View Architecture Details</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Technical Visual: Vector Embeddings & Knowledge Roadmap -->
+              <div class="project-tech-visual">
+                <div class="visual-container">
+                  <svg class="agent-network-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="url(#grid1)" />
+                    <!-- Vector space cluster visualization -->
+                    <circle cx="100" cy="90" r="45" fill="rgba(139, 92, 246, 0.08)" stroke="rgba(139, 92, 246, 0.25)" stroke-dasharray="2 2"/>
+                    <circle cx="300" cy="180" r="55" fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.25)" stroke-dasharray="2 2"/>
+                    
+                    <!-- Nodes -->
+                    <circle cx="85" cy="80" r="4" fill="#8b5cf6"/>
+                    <circle cx="115" cy="95" r="4" fill="#8b5cf6"/>
+                    <circle cx="100" cy="115" r="4" fill="#8b5cf6"/>
+                    <text x="100" y="145" fill="#A1A1AA" font-family="JetBrains Mono" font-size="8" text-anchor="middle">Learner Skill Vector</text>
+
+                    <circle cx="280" cy="165" r="4" fill="#ff2d87"/>
+                    <circle cx="315" cy="175" r="4" fill="#ff2d87"/>
+                    <circle cx="295" cy="200" r="4" fill="#ff2d87"/>
+                    <text x="300" y="245" fill="#A1A1AA" font-family="JetBrains Mono" font-size="8" text-anchor="middle">Curriculum pgvector Space</text>
+
+                    <!-- Cosine similarity connection -->
+                    <path d="M 100 90 Q 200 120 300 180" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                    <rect x="160" y="115" width="80" height="20" rx="3" fill="#18181B" stroke="#27272A"/>
+                    <text x="200" y="128" fill="#F4F4F5" font-family="JetBrains Mono" font-size="8" text-anchor="middle">Cosine Sim 0.91</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 16. ACHIEVEMENTS -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">06 // RECOGNITION</span>
+          <h2 class="section-title">ACHIEVEMENTS</h2>
+        </div>
+
+        <!-- Featured Spotlight Card: Capgemini Buildathon -->
+        <div class="achievement-spotlight reveal">
+          <div class="spotlight-aurora-glow" aria-hidden="true"></div>
+          <div class="spotlight-inner">
+            
+            <!-- Top Status Bar -->
+            <div class="spotlight-status-bar">
+              <div class="spotlight-badge-cluster">
+                <span class="spotlight-flag-pill">
+                  <span class="pulse-indicator"></span>
+                  FLAGSHIP RECOGNITION
+                </span>
+                <span class="spotlight-year-pill">2026</span>
+              </div>
+              <div class="spotlight-rank-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <span>NATIONAL RANK 11 – 50</span>
+              </div>
+            </div>
+
+            <!-- Two-column responsive showcase layout -->
+            <div class="spotlight-grid">
+              
+              <!-- Left: Narrative, Meta, Stats & Actions -->
+              <div class="spotlight-info-panel">
+                <div class="spotlight-super-title">
+                  <span class="org-name">Capgemini Exceller</span>
+                  <span class="dot-separator">•</span>
+                  <span class="team-name">Team LogicLegend</span>
+                  <span class="dot-separator">•</span>
+                  <span class="college-name">LNCT Group</span>
+                </div>
+
+                <h3 class="spotlight-headline">AgentifAI Buildathon 2026</h3>
+                <h4 class="spotlight-subheadline">Top 100 Finalist & National Standing (Rank 11 – 50)</h4>
+
+                <p class="spotlight-summary">
+                  Secured a top national finish out of <strong>8,000+ engineering teams</strong> in Capgemini's premier nationwide innovation challenge. Certified by Capgemini Executive Leadership for demonstrating forward-thinking spirit, high-impact collaboration, and engineering excellence in <strong>Agentic AI</strong> architectures.
+                </p>
+
+                <!-- Key Metrics Grid -->
+                <div class="spotlight-metrics-row">
+                  <div class="spotlight-metric-card">
+                    <span class="metric-num">11–50</span>
+                    <span class="metric-label">National Rank</span>
+                  </div>
+                  <div class="spotlight-metric-card">
+                    <span class="metric-num">8,000+</span>
+                    <span class="metric-label">Teams Competed</span>
+                  </div>
+                  <div class="spotlight-metric-card">
+                    <span class="metric-num">Top 100</span>
+                    <span class="metric-label">Finalist Tier</span>
+                  </div>
+                  <div class="spotlight-metric-card">
+                    <span class="metric-num">Agentic AI</span>
+                    <span class="metric-label">Focus Domain</span>
+                  </div>
+                </div>
+
+                <!-- Call to action buttons -->
+                <div class="spotlight-action-row">
+                  <button class="spotlight-btn spotlight-btn-primary" data-open-lightbox data-img="assets/certificates/capgemini_buildathon_certificate.png" data-pdf="assets/certificates/capgemini_buildathon_certificate.pdf" data-title="Capgemini Exceller AgentifAI Buildathon 2026 — Top 100 Finalist" data-issuer="Capgemini Exceller · Insights & Data Global Business Line" data-date="12 Aug 2026" data-certid="Certified to Ummehani Burhanuddin · Team LogicLegend">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                    <span>Inspect Certificate</span>
+                  </button>
+
+                  <button class="spotlight-btn spotlight-btn-secondary" data-open-lightbox data-img="assets/certificates/capgemini_buildathon_rank.png" data-pdf="assets/certificates/capgemini_buildathon_certificate.pdf" data-title="Capgemini Exceller AgentifAI Buildathon — National Rank 11-50 Card" data-issuer="Capgemini Exceller · Team LogicLegend · LNCT Group of Colleges" data-date="Aug 2026" data-certid="Rank 11 - 50 among 8,000+ Teams">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                    <span>View Rank Card</span>
+                  </button>
+
+                  <a href="assets/certificates/capgemini_buildathon_certificate.pdf" target="_blank" rel="noopener noreferrer" class="spotlight-btn spotlight-btn-pdf" aria-label="Open Capgemini Buildathon PDF Certificate">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <span>Official PDF</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Dual Media Interactive Showcase (Certificate & Rank Card) -->
+              <div class="spotlight-media-deck">
+                
+                <!-- Card 1: Official Certificate Preview -->
+                <div class="spotlight-visual-card cert-card-wrapper" tabindex="0" role="button" aria-label="Inspect Official Certificate" data-open-lightbox data-img="assets/certificates/capgemini_buildathon_certificate.png" data-pdf="assets/certificates/capgemini_buildathon_certificate.pdf" data-title="Capgemini Exceller AgentifAI Buildathon 2026 — Top 100 Finalist" data-issuer="Capgemini Exceller · Insights & Data Global Business Line" data-date="12 Aug 2026" data-certid="Certified to Ummehani Burhanuddin · Team LogicLegend">
+                  <div class="visual-card-glass">
+                    <img src="assets/certificates/capgemini_buildathon_certificate.png" alt="Capgemini Exceller AgentifAI Buildathon Certificate" class="visual-img" loading="lazy">
+                    <div class="visual-overlay-hint">
+                      <span class="hint-pill">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        Inspect Certificate ↗
+                      </span>
+                    </div>
+                    <div class="visual-tag tag-top">Official Certificate</div>
+                    <div class="visual-tag tag-bottom">Top 100 Finalist</div>
+                  </div>
+                </div>
+
+                <!-- Card 2: National Rank 11-50 Badge Card -->
+                <div class="spotlight-visual-card rank-card-wrapper" tabindex="0" role="button" aria-label="Inspect Rank 11-50 Badge Card" data-open-lightbox data-img="assets/certificates/capgemini_buildathon_rank.png" data-pdf="assets/certificates/capgemini_buildathon_certificate.pdf" data-title="Capgemini Exceller AgentifAI Buildathon — National Rank 11-50 Card" data-issuer="Capgemini Exceller · Team LogicLegend · LNCT Group of Colleges" data-date="Aug 2026" data-certid="Rank 11 - 50 among 8,000+ Teams">
+                  <div class="visual-card-glass rank-glass-variant">
+                    <img src="assets/certificates/capgemini_buildathon_rank.png" alt="Capgemini Exceller AgentifAI Buildathon National Rank 11-50 Badge Card" class="visual-img rank-img" loading="lazy">
+                    <div class="visual-overlay-hint">
+                      <span class="hint-pill">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        Inspect Rank Card ↗
+                      </span>
+                    </div>
+                    <div class="visual-tag tag-rank-glow">Rank 11 – 50 · 8000+ Teams</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="achievements-list">
+
+          <div class="achievement-item reveal">
+            <div class="ach-index">02</div>
+            <div class="ach-info">
+              <h3 class="ach-title">TOP 50 — CAPGEMINI SIDE QUEST</h3>
+              <p class="ach-desc">Top 50 finisher in Capgemini Side Quest competitive challenge.</p>
+            </div>
+            <div class="ach-badge">TOP 50</div>
+          </div>
+
+          <div class="achievement-item reveal">
+            <div class="ach-index">03</div>
+            <div class="ach-info">
+              <h3 class="ach-title">200+ LEETCODE PROBLEMS</h3>
+              <p class="ach-desc">Solved 200+ problems with consistent competitive programming practice focused on algorithmic problem solving and optimization.</p>
+            </div>
+            <div class="ach-badge">200+ SOLVED</div>
+          </div>
+
+          <div class="achievement-item reveal">
+            <div class="ach-index">04</div>
+            <div class="ach-info">
+              <h3 class="ach-title">SMART INDIA HACKATHON</h3>
+              <p class="ach-desc">Participant — developed AI/ML solutions for national-scale challenges.</p>
+            </div>
+            <div class="ach-badge">SIH</div>
+          </div>
+
+          <div class="achievement-item reveal">
+            <div class="ach-index">05</div>
+            <div class="ach-info">
+              <h3 class="ach-title">ORATORS CLUB</h3>
+              <p class="ach-desc">Active member, developing technical presentation and stakeholder communication skills.</p>
+            </div>
+            <div class="ach-badge">MEMBER</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17. CERTIFICATIONS (Animated Horizontal Sliding Showcase) -->
+    <section id="certifications" class="section certifications-section">
+      <div class="container">
+        <div class="section-header cert-header-flex reveal-up">
+          <div class="cert-title-group">
+            <span class="section-label">07 // CREDENTIALS</span>
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <p class="section-subtitle">Verified industry and academic engineering credentials. Click any certificate to inspect in high resolution.</p>
+          </div>
+          <div class="carousel-nav-buttons" aria-label="Certificate carousel controls">
+            <button class="carousel-nav-btn prev" id="cert-prev-btn" aria-label="Previous certificates">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="carousel-nav-btn next" id="cert-next-btn" aria-label="Next certificates">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Sliding Marquee Track -->
+      <div class="cert-marquee-container" id="cert-marquee-container">
+        <div class="cert-marquee-track" id="cert-marquee-track">
+          <!-- Item 0: Capgemini Exceller AgentifAI Buildathon -->
+          <div class="cert-card-interactive" data-slug="capgemini_buildathon" data-title="Capgemini Exceller AgentifAI Buildathon 2026 — Top 100 Finalist" data-issuer="Capgemini Exceller · Insights & Data Global Business Line" data-date="12 Aug 2026" data-certid="Rank 11-50 · Team LogicLegend" data-img="assets/certificates/capgemini_buildathon_certificate.png" data-pdf="assets/certificates/capgemini_buildathon_certificate.pdf" tabindex="0" role="button" aria-label="Inspect Capgemini Buildathon Certificate">
+            <div class="cert-preview-frame">
+              <img src="assets/certificates/capgemini_buildathon_certificate.png" alt="Capgemini Exceller AgentifAI Buildathon 2026 Certificate" class="cert-thumb-img" loading="lazy">
+              <div class="cert-badge-floating capgemini-badge">Capgemini Finalist</div>
+              <div class="cert-hover-hint">
+                <span>Inspect Certificate ↗</span>
+              </div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">Capgemini Exceller</span>
+                <span class="cert-date">Aug 2026</span>
+              </div>
+              <h3 class="cert-card-title">Capgemini Exceller AgentifAI Buildathon 2026</h3>
+              <div class="cert-id-tag">Top 100 · Rank 11–50 (8,000+ Teams)</div>
+            </div>
+          </div>
+
+          <!-- Item 1: Oracle OCI Data Science -->
+          <div class="cert-card-interactive" data-slug="oracle_oci_data_science" data-title="Oracle Cloud Infrastructure 2025 Certified Data Science Professional" data-issuer="Oracle University" data-date="August 25, 2025" data-certid="321902533OCI25DSOCP" data-img="assets/certificates/oracle_oci_data_science.png" data-pdf="assets/certificates/oracle_oci_data_science.pdf" tabindex="0" role="button" aria-label="Inspect Oracle Data Science Certificate">
+            <div class="cert-preview-frame">
+              <img src="assets/certificates/oracle_oci_data_science.png" alt="Oracle Cloud Infrastructure 2025 Certified Data Science Professional Certificate" class="cert-thumb-img" loading="lazy">
+              <div class="cert-badge-floating oracle-badge">Oracle Certified Professional</div>
+              <div class="cert-hover-hint">
+                <span>Inspect Certificate ↗</span>
+              </div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">Oracle University</span>
+                <span class="cert-date">Aug 2025</span>
+              </div>
+              <h3 class="cert-card-title">Oracle Cloud Infrastructure 2025 Certified Data Science Professional</h3>
+              <div class="cert-id-tag">ID: 321902533OCI25DSOCP</div>
+            </div>
+          </div>
+
+          <!-- Item 2: CCNA Enterprise Networking -->
+          <div class="cert-card-interactive" data-slug="cisco_ccna_enterprise" data-title="CCNA: Enterprise Networking, Security, and Automation" data-issuer="Cisco Networking Academy · LNCT Group" data-date="01 Jun 2026" data-certid="4801b34b-d241-45c7-9762-83609384a8a0" data-img="assets/certificates/cisco_ccna_enterprise.png" data-pdf="assets/certificates/cisco_ccna_enterprise.pdf" tabindex="0" role="button" aria-label="Inspect CCNA Enterprise Certificate">
+            <div class="cert-preview-frame">
+              <img src="assets/certificates/cisco_ccna_enterprise.png" alt="CCNA Enterprise Networking, Security, and Automation Certificate" class="cert-thumb-img" loading="lazy">
+              <div class="cert-badge-floating cisco-badge">CCNA Verified</div>
+              <div class="cert-hover-hint">
+                <span>Inspect Certificate ↗</span>
+              </div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">Cisco Networking Academy</span>
+                <span class="cert-date">Jun 2026</span>
+              </div>
+              <h3 class="cert-card-title">CCNA: Enterprise Networking, Security, and Automation</h3>
+              <div class="cert-id-tag">ID: 4801b34b-d241...</div>
+            </div>
+          </div>
+
+          <!-- Item 3: CCNA Introduction to Networks -->
+          <div class="cert-card-interactive" data-slug="cisco_ccna_intro" data-title="CCNA: Introduction to Networks" data-issuer="Cisco Networking Academy · LNCT Group" data-date="30 May 2026" data-certid="563d93fb-0e59-49c3-8ad9-c3de47cff088" data-img="assets/certificates/cisco_ccna_intro.png" data-pdf="assets/certificates/cisco_ccna_intro.pdf" tabindex="0" role="button" aria-label="Inspect CCNA Intro to Networks Certificate">
+            <div class="cert-preview-frame">
+              <img src="assets/certificates/cisco_ccna_intro.png" alt="CCNA Introduction to Networks Certificate" class="cert-thumb-img" loading="lazy">
+              <div class="cert-badge-floating cisco-badge">CCNA Verified</div>
+              <div class="cert-hover-hint">
+                <span>Inspect Certificate ↗</span>
+              </div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">Cisco Networking Academy</span>
+                <span class="cert-date">May 2026</span>
+              </div>
+              <h3 class="cert-card-title">CCNA: Introduction to Networks</h3>
+              <div class="cert-id-tag">ID: 563d93fb-0e59...</div>
+            </div>
+          </div>
+
+          <!-- Item 4: Python Essentials 2 -->
+          <div class="cert-card-interactive" data-slug="cisco_python_essentials_2" data-title="Python Essentials 2" data-issuer="Cisco Networking Academy · Python Institute" data-date="13 Apr 2026" data-certid="4c6c310f-e1a6-4e48-bc8d-755c22168441" data-img="assets/certificates/cisco_python_essentials_2.png" data-pdf="assets/certificates/cisco_python_essentials_2.pdf" tabindex="0" role="button" aria-label="Inspect Python Essentials 2 Certificate">
+            <div class="cert-preview-frame">
+              <img src="assets/certificates/cisco_python_essentials_2.png" alt="Python Essentials 2 Certificate" class="cert-thumb-img" loading="lazy">
+              <div class="cert-badge-floating python-badge">Python Institute</div>
+              <div class="cert-hover-hint">
+                <span>Inspect Certificate ↗</span>
+              </div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">Python Institute · Cisco</span>
+                <span class="cert-date">Apr 2026</span>
+              </div>
+              <h3 class="cert-card-title">Python Essentials 2</h3>
+              <div class="cert-id-tag">ID: 4c6c310f-e1a6...</div>
+            </div>
+          </div>
+
+          <!-- Item 5: Networking Basics -->
+          <div class="cert-card-interactive" data-slug="cisco_networking_basics" data-title="Networking Basics" data-issuer="Cisco Networking Academy · LNCT Group" data-date="11 Dec 2025" data-certid="Instructor: Pushpank Thakur" data-img="assets/certificates/cisco_networking_basics.png" data-pdf="assets/certificates/cisco_networking_basics.pdf" tabindex="0" role="button" aria-label="Inspect Networking Basics Certificate">
+            <div class="cert-preview-frame">
+              <img src="assets/certificates/cisco_networking_basics.png" alt="Networking Basics Certificate" class="cert-thumb-img" loading="lazy">
+              <div class="cert-badge-floating cisco-badge">Cisco Verified</div>
+              <div class="cert-hover-hint">
+                <span>Inspect Certificate ↗</span>
+              </div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">Cisco Networking Academy</span>
+                <span class="cert-date">Dec 2025</span>
+              </div>
+              <h3 class="cert-card-title">Networking Basics</h3>
+              <div class="cert-id-tag">LNCT · Pushpank Thakur</div>
+            </div>
+          </div>
+
+          <!-- Item 6: NPTEL Machine Learning -->
+          <div class="cert-card-interactive cert-card-academic">
+            <div class="cert-preview-frame academic-frame">
+              <div class="academic-cert-graphic">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <span class="academic-inst">IIT MADRAS</span>
+              </div>
+              <div class="cert-badge-floating nptel-badge">NPTEL Certified</div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">NPTEL — IIT Madras</span>
+                <span class="cert-date">Academic</span>
+              </div>
+              <h3 class="cert-card-title">Introduction to Machine Learning</h3>
+              <div class="cert-id-tag">Faculty Verified Course</div>
+            </div>
+          </div>
+
+          <!-- Item 7: NPTEL Java -->
+          <div class="cert-card-interactive cert-card-academic">
+            <div class="cert-preview-frame academic-frame">
+              <div class="academic-cert-graphic">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <span class="academic-inst">IIT KHARAGPUR</span>
+              </div>
+              <div class="cert-badge-floating nptel-badge">NPTEL Certified</div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">NPTEL — IIT Kharagpur</span>
+                <span class="cert-date">Academic</span>
+              </div>
+              <h3 class="cert-card-title">Programming in Java</h3>
+              <div class="cert-id-tag">Faculty Verified Course</div>
+            </div>
+          </div>
+
+          <!-- Item 8: Python Essentials 1 -->
+          <div class="cert-card-interactive cert-card-academic">
+            <div class="cert-preview-frame academic-frame">
+              <div class="academic-cert-graphic">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <span class="academic-inst">CISCO ACADEMY</span>
+              </div>
+              <div class="cert-badge-floating cisco-badge">Cisco Verified</div>
+            </div>
+            <div class="cert-card-meta">
+              <div class="cert-meta-row">
+                <span class="cert-issuer">Cisco Networking Academy</span>
+                <span class="cert-date">2025</span>
+              </div>
+              <h3 class="cert-card-title">Python Essentials 1</h3>
+              <div class="cert-id-tag">Foundational Programming</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 18. LEETCODE / PROBLEM SOLVING -->
+    <section id="problem-solving" class="section problem-solving-section">
+      <div class="container">
+        <div class="problem-solving-box reveal">
+          <!-- Subtle Algorithmic Graphic Overlay -->
+          <div class="algo-watermark" aria-hidden="true">
+            <span>[O(log N)]</span>
+            <span>{tree_node}</span>
+            <span>&lt;binary_search&gt;</span>
+          </div>
+
+          <div class="problem-content">
+            <span class="section-label">08 // COMPUTATIONAL MASTERY</span>
+            <div class="big-stat-row">
+              <span class="big-number">200+</span>
+              <span class="big-label">LeetCode Problems Solved</span>
+            </div>
+            <p class="stat-desc">
+              Strong foundation in Data Structures, Algorithms, and optimization through consistent problem-solving practice.
+            </p>
+            <a href="https://leetcode.com/u/ummehani0202/" class="btn btn-secondary config-leetcode" target="_blank" rel="noopener noreferrer">
+              View LeetCode Profile →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 19. RESUME SECTION -->
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        <div class="resume-banner reveal-up">
+          <div class="resume-text">
+            <span class="section-label">09 // DOCUMENTATION</span>
+            <h2 class="resume-heading">LET'S TALK ENGINEERING<span class="accent-dot">.</span></h2>
+            <p class="resume-desc">
+              Explore my experience, technical skills, projects, and achievements in my resume.
+            </p>
+          </div>
+          <div class="resume-cta-buttons">
+            <a href="assets/Ummehani_Burhanuddin_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              View Resume
+            </a>
+            <a href="assets/Ummehani_Burhanuddin_Resume.pdf" download class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 20. SOCIAL LINKS -->
+    <section class="section social-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-label">10 // NETWORK</span>
+          <h2 class="section-title">CONNECT</h2>
+        </div>
+
+        <div class="social-grid">
+          <a href="https://linkedin.com/in/ummehani-burhanuddin-954975253" class="social-card reveal config-linkedin" target="_blank" rel="noopener noreferrer">
+            <div class="soc-top">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span class="soc-arrow">↗</span>
+            </div>
+            <h3 class="soc-title">LINKEDIN</h3>
+            <p class="soc-desc">Professional profile</p>
+          </a>
+
+          <a href="https://github.com/ummehani2224" class="social-card reveal config-github" target="_blank" rel="noopener noreferrer">
+            <div class="soc-top">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span class="soc-arrow">↗</span>
+            </div>
+            <h3 class="soc-title">GITHUB</h3>
+            <p class="soc-desc">Projects & code</p>
+          </a>
+
+          <a href="https://leetcode.com/u/ummehani0202/" class="social-card reveal config-leetcode" target="_blank" rel="noopener noreferrer">
+            <div class="soc-top">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3l-4 4-4-4"></path><path d="M12 7v10"></path><path d="M8 21h8"></path><path d="M18 10l3 3-3 3"></path></svg>
+              <span class="soc-arrow">↗</span>
+            </div>
+            <h3 class="soc-title">LEETCODE</h3>
+            <p class="soc-desc">Problem solving</p>
+          </a>
+
+          <a href="mailto:ummehanib22@gmail.com" class="social-card reveal config-email">
+            <div class="soc-top">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span class="soc-arrow">↗</span>
+            </div>
+            <h3 class="soc-title">EMAIL</h3>
+            <p class="soc-desc">Get in touch</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 21. CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal-up">
+            <span class="section-label">11 // COLLABORATION</span>
+            <h2 class="contact-heading">HAVE AN INTERESTING PROBLEM?</h2>
+            <p class="contact-desc">
+              I'm interested in software engineering, AI/ML, intelligent systems, and opportunities where thoughtful engineering can create real impact.
+            </p>
+
+            <div class="contact-direct">
+              <div class="contact-direct-item">
+                <span class="contact-direct-label">EMAIL DIRECT:</span>
+                <a href="mailto:ummehanib22@gmail.com" class="contact-direct-link">ummehanib22@gmail.com</a>
+              </div>
+              <div class="contact-direct-item">
+                <span class="contact-direct-label">LOCATION:</span>
+                <span class="contact-direct-link">Bhopal, Madhya Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with Validation & Mailto Fallback -->
+          <div class="contact-form-wrapper reveal-up">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Alex Rivera" class="form-input">
+                <span class="form-error" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" required placeholder="alex@company.com" class="form-input">
+                <span class="form-error" id="email-error">Please provide a valid email.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Let's build something intelligent..." class="form-input"></textarea>
+                <span class="form-error" id="message-error">Please write a brief message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 22. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">UMMEHANI<span class="accent-dot">.</span></span>
+        <span class="footer-subtitle">Software Engineer · AI/ML Engineer</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/ummehani-burhanuddin-954975253" class="config-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ummehani2224" class="config-github" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://leetcode.com/u/ummehani0202/" class="config-leetcode" target="_blank" rel="noopener noreferrer">LeetCode</a>
+        <a href="mailto:ummehanib22@gmail.com" class="config-email">Email</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Ummehani Burhanuddin. Built with intention.</p>
+    </div>
+  <!-- Certificate High-Resolution Lightbox Modal -->
+  <div id="cert-lightbox" class="cert-lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+    <div class="lightbox-modal">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close certificate preview">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="lightbox-body">
+        <div class="lightbox-image-container">
+          <img src="" alt="" id="lightbox-img" class="lightbox-img">
+        </div>
+        <div class="lightbox-details">
+          <div class="lightbox-header">
+            <span class="lightbox-issuer-tag" id="lightbox-issuer"></span>
+            <span class="lightbox-date-tag" id="lightbox-date"></span>
+          </div>
+          <h3 class="lightbox-title" id="lightbox-title"></h3>
+          <p class="lightbox-id" id="lightbox-id"></p>
+          <div class="lightbox-actions">
+            <a href="" target="_blank" rel="noopener noreferrer" id="lightbox-pdf-link" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              View Official PDF
+            </a>
+            <a href="" download id="lightbox-download-link" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

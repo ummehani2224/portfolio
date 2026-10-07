@@ -1,0 +1,17 @@
+# Unused media / frames (OneDrive offloaded stubs)
+frames/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime / Deployment
+.vercel
+node_modules/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

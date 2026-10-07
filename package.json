@@ -1,0 +1,21 @@
+{
+  "name": "ummehani-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Ummehani Burhanuddin — Software Engineer & AI/ML Engineer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "ai-engineer",
+    "machine-learning"
+  ],
+  "author": "Ummehani Burhanuddin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
